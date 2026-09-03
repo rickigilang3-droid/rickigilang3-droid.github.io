@@ -1,0 +1,200 @@
+/**
+ * Portfolio Data Configuration - Ricki Gilang Saputra
+ * Konfigurasi lengkap profil, keahlian, studi kasus proyek, dan perjalanan karir.
+ */
+const PORTFOLIO_DATA = {
+    profile: {
+        name: "Ricki Gilang Saputra",
+        handle: "rickigilang.dev",
+        role: "Mahasiswa Teknologi Informasi @ UBSI",
+        rolesTyping: [
+            "Mahasiswa Teknologi Informasi @ UBSI",
+            "Full-Stack Web Developer",
+            "Backend & Database Enthusiast",
+            "MySQL & Supabase Specialist",
+            "Open Source Explorer"
+        ],
+        location: "Jakarta, Indonesia",
+        campus: "Universitas Bina Sarana Informatika (UBSI)",
+        status: "🟢 Mahasiswa Aktif UBSI • Open for Projects & Internships",
+        bio: "Mahasiswa aktif program studi S1 Teknologi Informasi di Universitas Bina Sarana Informatika (UBSI). Berfokus pada perancangan sistem web performa tinggi, pemodelan basis data terstruktur (MySQL & Supabase), serta rekayasa perangkat lunak modern yang bersih, efisien, dan menyelesaikan masalah nyata di masyarakat.",
+        avatar: "assets/images/profile.jpg",
+        avatarSpiderman: "assets/images/profile_spiderman.jpg",
+        email: "rickigilang3@gmail.com",
+        whatsapp: "6281388796229",
+        discord: "ricki_dev#1337",
+        github: "https://github.com/rickigilang3-droid",
+        githubUsername: "rickigilang3-droid",
+        linkedin: "https://linkedin.com",
+        twitter: "https://twitter.com",
+        resumeUrl: "#"
+    },
+
+    stats: [
+        { label: "Proyek Nyata Teruji", value: "4+", icon: "folder-check", desc: "Produksi & Open Source" },
+        { label: "Database Engine", value: "MySQL & Supabase", icon: "database", desc: "Relasional & Cloud BaaS" },
+        { label: "Git Repository", value: "Verified", icon: "git-commit", desc: "GitHub @rickigilang3-droid" },
+        { label: "Status Akademik", value: "UBSI TI", icon: "graduation-cap", desc: "Mahasiswa Aktif S1" }
+    ],
+
+    skills: [
+        {
+            category: "Frontend & Modern UI",
+            items: [
+                { name: "JavaScript (ES6+)", level: "Advanced", icon: "code" },
+                { name: "TypeScript", level: "Intermediate", icon: "file-code" },
+                { name: "React.js / Next.js", level: "Advanced", icon: "layers" },
+                { name: "Vue.js", level: "Intermediate", icon: "box" },
+                { name: "Tailwind CSS", level: "Expert", icon: "palette" },
+                { name: "HTML5 / Semantic Web", level: "Expert", icon: "layout" }
+            ]
+        },
+        {
+            category: "Backend & Systems Architecture",
+            items: [
+                { name: "PHP / Laravel", level: "Advanced", icon: "cpu" },
+                { name: "Node.js / Express", level: "Advanced", icon: "server" },
+                { name: "Python (Analitik & Scripting)", level: "Intermediate", icon: "terminal" },
+                { name: "RESTful API Design", level: "Advanced", icon: "network" },
+                { name: "Authentication & JWT", level: "Advanced", icon: "lock" }
+            ]
+        },
+        {
+            category: "Database & Cloud Infrastructure",
+            items: [
+                { name: "MySQL (Relational / Indexing)", level: "Advanced", icon: "database" },
+                { name: "Supabase (PostgreSQL / BaaS)", level: "Advanced", icon: "database" },
+                { name: "Query Optimization", level: "Advanced", icon: "zap" },
+                { name: "Git & Version Control", level: "Advanced", icon: "git-branch" },
+                { name: "Docker & Linux Rice", level: "Intermediate", icon: "container" }
+            ]
+        }
+    ],
+
+    projects: [
+        {
+            id: "bbca-stock-analytics",
+            title: "BBCA Stock Analytics & Technical Dashboard",
+            category: "tools",
+            badgeMetric: "📈 99.8% Data Sync",
+            description: "Platform analitik finansial kuantitatif saham PT Bank Central Asia Tbk (BBCA) dengan candlestick visualizer interaktif, moving average, RSI, dan kalkulator return dividen.",
+            longDescription: "Aplikasi analitik finansial modern yang dirancang khusus untuk memetakan dan menganalisis fluktuasi historis harga saham BBCA. Dibangun dengan memadukan Python untuk data aggregation, Next.js untuk antarmuka super cepat, dan Supabase untuk sinkronisasi watchlist pengguna secara real-time.",
+            image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
+            tags: ["Python", "Next.js", "Supabase", "Chart.js", "Financial API"],
+            demoUrl: "https://github.com/rickigilang3-droid/analisis-saham-bbca",
+            githubUrl: "https://github.com/rickigilang3-droid/analisis-saham-bbca",
+            featured: true,
+            metrics: [
+                { label: "Data Latency", value: "< 100ms" },
+                { label: "Teknikal", value: "MA & RSI" },
+                { label: "Database", value: "Supabase BaaS" }
+            ],
+            coreFeatures: [
+                "Visualisasi candlestick real-time dengan toggle timeframe (Daily, Weekly, Monthly)",
+                "Indikator teknikal terintegrasi: Simple Moving Average (SMA 20/50/200) dan Relative Strength Index (RSI)",
+                "Kalkulator proyeksi dividen tahunan dan estimasi capital gain investor",
+                "Sinkronisasi watchlist berbasis cloud dengan Supabase database"
+            ],
+            challengeSolution: "Tantangan utama adalah menyajikan ratusan baris data tick saham tanpa lag pada browser. Solusinya dengan menerapkan data aggregation di sisi Python backend dan virtualized canvas rendering menggunakan Chart.js di frontend."
+        },
+        {
+            id: "school-academic-portal",
+            title: "EduPortal - Sistem Informasi & Portal Akademik Sekolah",
+            category: "fullstack",
+            badgeMetric: "🏫 15+ Tabel Relasional",
+            description: "Aplikasi web sekolah terpadu multi-role untuk pengolahan e-rapor otomatis, absensi presisi guru & siswa, penjadwalan pelajaran, serta cetak dokumen digital.",
+            longDescription: "Sistem informasi manajemen sekolah komprehensif yang mendigitalkan seluruh alur akademik harian. Dilengkapi sistem multi-tier authentication (Admin, Guru, Siswa, dan Orang Tua/Wali), kalkulasi rekapitulasi nilai kurikulum otomatis, dan relasi database MySQL yang ternormalisasi rapi.",
+            image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+            tags: ["PHP", "Laravel", "MySQL", "Tailwind CSS", "PDF Engine"],
+            demoUrl: "https://github.com/rickigilang3-droid",
+            githubUrl: "https://github.com/rickigilang3-droid",
+            featured: true,
+            metrics: [
+                { label: "User Roles", value: "4 Level" },
+                { label: "Hemat Waktu Rapor", value: "75%" },
+                { label: "Database", value: "MySQL 3NF" }
+            ],
+            coreFeatures: [
+                "Otentikasi bertingkat aman (Admin, Dewan Guru, Peserta Didik, dan Wali Murid)",
+                "Otomatisasi kalkulasi bobot nilai tugas, UTS, UAS, dan sikap kurikulum",
+                "Export rapor siswa instan ke format dokumen PDF berstandar legal dinas",
+                "Modul presensi harian dengan rekapitulasi persentase kehadiran visual"
+            ],
+            challengeSolution: "Menjamin integritas data nilai siswa antar tahun ajaran tanpa redudansi. Dipecahkan dengan skema basis data MySQL 3rd Normal Form (3NF) dilengkapi foreign key constraint dan indexing terstruktur."
+        },
+        {
+            id: "umkm-commerce-hub",
+            title: "UMKM Showcase & Digital Catalog Marketplace",
+            category: "frontend",
+            badgeMetric: "⚡ Speed Index 98/100",
+            description: "Platform etalase digital UMKM lokal modern berkonsep mobile-first dengan filter instan, kalkulator estimasi ongkos kirim, dan direct checkout ke WhatsApp.",
+            longDescription: "Solusi digitalisasi UMKM untuk mendongkrak penjualan produk lokal tanpa potongan komisi pihak ketiga. Pengunjung dapat mengeksplorasi katalog produk dengan pencarian instan dan langsung melakukan transaksi pemesanan melalui WhatsApp penjual dengan format invoice otomatis.",
+            image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80",
+            tags: ["React.js", "Supabase", "Tailwind CSS", "WhatsApp API"],
+            demoUrl: "https://github.com/rickigilang3-droid",
+            githubUrl: "https://github.com/rickigilang3-droid",
+            featured: true,
+            metrics: [
+                { label: "Lighthouse Score", value: "98/100" },
+                { label: "Checkout", value: "1-Click WA" },
+                { label: "BaaS", value: "Supabase" }
+            ],
+            coreFeatures: [
+                "Tampilan antarmuka mobile-first ultra-responsif dengan performa loading instan",
+                "Fitur dynamic filtering berdasarkan kategori produk, rentang harga, dan status stok",
+                "Keranjang belanja lokal tanpa login rumit yang menyusun pesanan otomatis",
+                "One-Click checkout langsung mengarahkan ke WhatsApp admin penjual dengan rincian invoice"
+            ],
+            challengeSolution: "Membuat checkout semudah mungkin bagi masyarakat awam tanpa alur pendaftaran berbelit. Diatasi dengan integrasi template URL WhatsApp generator dinamis yang langsung merinci barang dan total harga."
+        },
+        {
+            id: "ecohub-waste-bank",
+            title: "EcoHub - Sistem Manajemen Bank Sampah Digital",
+            category: "backend",
+            badgeMetric: "♻️ Smart Eco Ledger",
+            description: "Platform pencatatan tabungan sampah warga terintegrasi, konversi timbangan kilogram ke saldo rupiah, penimbangan komunitas, dan analitik jejak karbon.",
+            longDescription: "Aplikasi tata kelola bank sampah modern yang mendorong partisipasi warga dalam pelestarian lingkungan hidup. Sistem mencatat penimbangan sampah terpilah (plastik, kardus, logam, minyak jelantah), mengonversinya secara otomatis ke saldo tabungan warga, dan menampilkan grafik reduksi limbah.",
+            image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80",
+            tags: ["Laravel", "MySQL", "Vue.js", "Tailwind CSS", "Chart.js"],
+            demoUrl: "https://github.com/rickigilang3-droid/EcoHub-main",
+            githubUrl: "https://github.com/rickigilang3-droid/EcoHub-main",
+            featured: true,
+            metrics: [
+                { label: "Konversi Timbangan", value: "Otomatis" },
+                { label: "Audit Transaksi", value: "100% Valid" },
+                { label: "Database", value: "MySQL Ledger" }
+            ],
+            coreFeatures: [
+                "Buku tabungan digital nasabah bank sampah dengan riwayat setoran transparan",
+                "Katalog harga dinamis per kilogram untuk setiap jenis kategori sampah daur ulang",
+                "Modul kasir dan timbangan digital komunitas dengan cetak struk penimbangan",
+                "Dashboard analitik lingkungan yang memvisualisasikan total kilogram sampah yang berhasil diselamatkan"
+            ],
+            challengeSolution: "Mencegah kesalahan kalkulasi saldo akibat fluktuasi harga komoditas daur ulang. Diselesaikan dengan membuat history snapshot table pada database MySQL sehingga transaksi lama tidak terpengaruh oleh update harga baru."
+        }
+    ],
+
+    experiences: [
+        {
+            period: "2023 - Sekarang",
+            role: "S1 Teknologi Informasi (Mahasiswa Aktif)",
+            company: "Universitas Bina Sarana Informatika (UBSI)",
+            type: "Pendidikan Formal & Riset",
+            description: "Mendalami rekayasa perangkat lunak, algoritma pemrograman, desain & normalisasi basis data relasional (MySQL), cloud database (Supabase), serta arsitektur komputasi web modern."
+        },
+        {
+            period: "2024 - Sekarang",
+            role: "Full-Stack Web Developer & Open Source Explorer",
+            company: "Independent / Project-Based",
+            type: "Praktik & Portofolio Nyata",
+            description: "Merancang dan mendeploy aplikasi berorientasi solusi nyata: Platform Analisis Saham BBCA, Portal Akademik Sekolah (EduPortal), Web Marketplace Katalog UMKM, dan Sistem Bank Sampah Komunitas (EcoHub)."
+        },
+        {
+            period: "2023 - 2024",
+            role: "Database & Backend Engineering Specialization",
+            company: "Self-Driven Study & Implementation",
+            type: "Fokus Keahlian",
+            description: "Mendalami optimasi query SQL, indexing data berskala besar di MySQL, serta implementasi BaaS (Backend-as-a-Service) modern dengan Supabase / PostgreSQL untuk kecepatan delivery aplikasi."
+        }
+    ]
+};
