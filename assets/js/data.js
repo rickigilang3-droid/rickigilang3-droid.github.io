@@ -31,7 +31,7 @@ const PORTFOLIO_DATA = {
     },
 
     stats: [
-        { label: "Proyek Nyata Teruji", value: "4+", icon: "folder-check", desc: "Produksi & Open Source" },
+        { label: "Proyek Nyata Teruji", value: "5+", icon: "folder-check", desc: "Produksi & Open Source" },
         { label: "Database Engine", value: "MySQL & Supabase", icon: "database", desc: "Relasional & Cloud BaaS" },
         { label: "Git Repository", value: "Verified", icon: "git-commit", desc: "GitHub @rickigilang3-droid" },
         { label: "Status Akademik", value: "UBSI TI", icon: "graduation-cap", desc: "Mahasiswa Aktif S1" }
@@ -72,6 +72,31 @@ const PORTFOLIO_DATA = {
     ],
 
     projects: [
+        {
+            id: "rs-amelia-medika",
+            title: "RS Amelia Medika - Sistem Informasi Manajemen Rumah Sakit & Klinik",
+            category: "fullstack",
+            badgeMetric: "🏥 SIMRS Terpadu",
+            description: "Sistem informasi manajemen rumah sakit & klinik terpadu untuk alur pendaftaran pasien, antrean poli teratur, rekam medis elektronik (RME), jadwal dokter, dan billing farmasi.",
+            longDescription: "Platform Sistem Informasi Manajemen Rumah Sakit (SIMRS) modern yang dirancang untuk mendigitalkan seluruh alur pelayanan klinik dan rumah sakit. Menghubungkan proses pendaftaran pasien, nomor antrean poli, rekam medis elektronik (RME) yang aman dan terpusat, sistem transaksi apotek farmasi, hingga pemantauan operasional terpusat secara real-time.",
+            image: "assets/images/project_rs_amelia.jpg",
+            tags: ["Next.js", "React", "Node.js", "Tailwind CSS", "Medical EHR", "Vercel"],
+            demoUrl: "https://rs-amelia-medika.vercel.app/",
+            githubUrl: "https://github.com/rickigilang3-droid",
+            featured: true,
+            metrics: [
+                { label: "Alur Pelayanan", value: "Terintegrasi" },
+                { label: "Waktu Tunggu", value: "-60% Antrean" },
+                { label: "Hosting", value: "Cloud Vercel" }
+            ],
+            coreFeatures: [
+                "Pendaftaran pasien online dan manajemen alur antrean poliklinik secara terstruktur",
+                "Pencatatan Rekam Medis Elektronik (RME) terpadu yang aman untuk dokter & tenaga medis",
+                "Modul resep obat, katalog farmasi, dan kalkulasi tagihan pelayanan otomatis",
+                "Dashboard monitoring operasional klinik terpusat dengan laporan transaksi berkala"
+            ],
+            challengeSolution: "Mengintegrasikan berbagai unit pelayanan klinik (admisi pendaftaran, poli dokter, farmasi, kasir) ke dalam satu siklus data terpadu tanpa hambatan komunikasi. Diselesaikan dengan arsitektur RESTful API yang modular dan state management tersinkronisasi."
+        },
         {
             id: "bbca-stock-analytics",
             title: "BBCA Stock Analytics & Technical Dashboard",

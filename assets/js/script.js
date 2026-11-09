@@ -165,10 +165,10 @@ function initTerminal() {
 <div class="space-y-1.5 text-xs font-mono text-slate-200">
   <div class="text-cyan-400 font-bold">🐙 GitHub Profile: @${PORTFOLIO_DATA.profile.githubUsername}</div>
   <div>🔗 Profil: <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-emerald-400 underline">${PORTFOLIO_DATA.profile.github}</a></div>
-  <div class="text-slate-400 pt-1">Live Web Apps & Repository:</div>
+  <div class="text-slate-400 pt-1">Live Web Apps & Portfolio:</div>
   <div class="pl-2 space-y-1 text-slate-300">
-    <div>• <a href="https://analisis-saham-bbca-2o1r.vercel.app/login" target="_blank" class="text-emerald-300 hover:underline font-semibold">analisis-saham-bbca (Live App @ Vercel)</a> 🚀</div>
-    <div>• <a href="https://github.com/rickigilang3-droid/analisis-saham-bbca" target="_blank" class="text-cyan-300 hover:underline font-semibold">analisis-saham-bbca</a> <span class="text-slate-500">(Source Code)</span></div>
+    <div>• <a href="https://rs-amelia-medika.vercel.app/" target="_blank" class="text-teal-300 hover:underline font-semibold">RS Amelia Medika (Live App @ Vercel)</a> 🏥</div>
+    <div>• <a href="https://analisis-saham-bbca-2o1r.vercel.app/login" target="_blank" class="text-emerald-300 hover:underline font-semibold">analisis-saham-bbca (Live App @ Vercel)</a> 📈</div>
     <div>• <a href="https://github.com/rickigilang3-droid/EcoHub-main" target="_blank" class="text-purple-300 hover:underline font-semibold">EcoHub-main</a> <span class="text-slate-500">(Waste Bank Platform)</span></div>
   </div>
 </div>`,
@@ -194,7 +194,7 @@ function initTerminal() {
 
         projects: () => {
             let output = '<div class="space-y-1.5">';
-            PORTFOLIO_DATA.projects.slice(0, 4).forEach((p, idx) => {
+            PORTFOLIO_DATA.projects.slice(0, 5).forEach((p, idx) => {
                 output += `<div><span class="text-emerald-400 font-mono">${idx + 1}.</span> <span class="text-white font-medium">${p.title}</span> <span class="text-slate-500 text-xs">(${p.tags.slice(0, 3).join(", ")})</span></div>`;
             });
             output += `<div class="text-xs text-slate-400 mt-2">Ketik <span class="text-cyan-400">projects --all</span> atau scroll ke section Projects untuk selengkapnya.</div></div>`;
@@ -423,16 +423,10 @@ function renderProjects(filter = "all") {
                         <span>Detail Studi Kasus</span>
                         <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
                     </button>
-                    <div class="flex items-center gap-2">
-                        <a href="${p.githubUrl}" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-all text-xs font-mono flex items-center gap-1.5" title="Lihat Source Code">
-                            <i data-lucide="github" class="w-3.5 h-3.5"></i>
-                            <span class="hidden sm:inline">Repo</span>
-                        </a>
-                        <a href="${p.demoUrl}" target="_blank" class="px-3 py-1.5 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 hover:border-cyan-500/60 transition-all text-xs font-mono flex items-center gap-1.5" title="Live Preview">
-                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                            <span class="hidden sm:inline">Demo</span>
-                        </a>
-                    </div>
+                    <a href="${p.demoUrl}" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white transition-all text-xs font-mono font-semibold flex items-center gap-1.5 shadow-sm shadow-cyan-500/20" title="Buka Demo Langsung">
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        <span>Demo Langsung</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -552,16 +546,10 @@ window.openProjectModal = function(projectId) {
 
             <!-- Footer Actions -->
             <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-4 items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <a href="${project.demoUrl}" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs font-semibold hover:opacity-90 transition-opacity flex items-center gap-2 shadow-lg shadow-cyan-500/20">
-                        <i data-lucide="external-link" class="w-4 h-4"></i>
-                        <span>Buka Live Demo</span>
-                    </a>
-                    <a href="${project.githubUrl}" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors flex items-center gap-2 border border-slate-700">
-                        <i data-lucide="github" class="w-4 h-4"></i>
-                        <span>Source Code</span>
-                    </a>
-                </div>
+                <a href="${project.demoUrl}" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-xs font-semibold transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <span>Buka Demo Langsung</span>
+                </a>
                 <button onclick="closeProjectModal()" class="text-xs text-slate-400 hover:text-white px-3 py-1.5 rounded-lg hover:bg-slate-800 transition-colors">Tutup Studi Kasus</button>
             </div>
         </div>
