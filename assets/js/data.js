@@ -31,7 +31,7 @@ const PORTFOLIO_DATA = {
     },
 
     stats: [
-        { label: "Proyek Nyata Teruji", value: "6+", icon: "folder-check", desc: "Produksi & Open Source" },
+        { label: "Proyek Nyata Teruji", value: "7+", icon: "folder-check", desc: "Produksi & Open Source" },
         { label: "Database Engine", value: "MySQL & Supabase", icon: "database", desc: "Relasional & Cloud BaaS" },
         { label: "Git Repository", value: "Verified", icon: "git-commit", desc: "GitHub @rickigilang3-droid" },
         { label: "Status Akademik", value: "UBSI TI", icon: "graduation-cap", desc: "Mahasiswa Aktif S1" }
@@ -72,6 +72,31 @@ const PORTFOLIO_DATA = {
     ],
 
     projects: [
+        {
+            id: "ar-shoes-studio",
+            title: "AR Shoes Studio — 3D & Augmented Reality Product Experience",
+            category: "frontend",
+            badgeMetric: "👟 3D WebGL & AR",
+            description: "Platform visualisasi interaktif sepatu dalam 3D 360°, penyesuaian warna real-time, inspeksi detail material tiap bagian, dan pengalaman mencoba sepatu di ruangan nyata via Augmented Reality (AR).",
+            longDescription: "Aplikasi web interaktif 3D & Augmented Reality mutakhir yang menghadirkan pengalaman belanja masa depan. Pengguna dapat memutar model 3D sepatu secara 360 derajat, menjelajahi hotspot anatomi sol dan material, mengganti varian warna secara real-time, serta memproyeksikan sepatu ke dalam ruangan nyata menggunakan teknologi WebXR / QuickLook AR di smartphone.",
+            image: "assets/images/project_ar_shoes.jpg",
+            tags: ["Three.js", "WebGL", "WebXR", "Vite", "3D Modeling", "Vercel"],
+            demoUrl: "https://ar-shoes-puma.vercel.app/",
+            githubUrl: "https://github.com/rickigilang3-droid",
+            featured: true,
+            metrics: [
+                { label: "Rendering Engine", value: "WebGL 60FPS" },
+                { label: "Fitur AR", value: "WebXR Space" },
+                { label: "Interaksi", value: "360° Orbit" }
+            ],
+            coreFeatures: [
+                "Manipulasi 3D orbital rotasi 360 derajat dengan kontrol zoom dan panning mulus",
+                "Fitur 'View in Your Space' (Augmented Reality) untuk memproyeksikan produk ke lantai ruangan nyata",
+                "Sistem kustomisasi varian warna sepatu dinamis secara instan tanpa reload",
+                "Hotspot anotasi anatomi sepatu untuk menjelaskan fitur teknologi bantalan dan sirkulasi udara"
+            ],
+            challengeSolution: "Mengoptimalkan performa rendering model 3D berkualitas tinggi agar tetap ringan berjalan di 60 FPS pada browser mobile tanpa lag. Diatasi dengan kompresi geometri glTF/GLB dan dynamic level-of-detail (LOD)."
+        },
         {
             id: "certiva-amelia",
             title: "Certiva - Portal Verifikasi Publik Sertifikat & Ijazah Digital",
