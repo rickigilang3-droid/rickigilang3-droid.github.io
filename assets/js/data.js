@@ -174,28 +174,28 @@ const PORTFOLIO_DATA = {
         },
         {
             id: "school-academic-portal",
-            title: "EduPortal - Sistem Informasi & Portal Akademik Sekolah",
+            title: "EduPortal & SPP - Sistem Informasi Sekolah & Pembayaran SPP Online",
             category: "fullstack",
-            badgeMetric: "🏫 15+ Tabel Relasional",
-            description: "Aplikasi web sekolah terpadu multi-role untuk pengolahan e-rapor otomatis, absensi presisi guru & siswa, penjadwalan pelajaran, serta cetak dokumen digital.",
-            longDescription: "Sistem informasi manajemen sekolah komprehensif yang mendigitalkan seluruh alur akademik harian. Dilengkapi sistem multi-tier authentication (Admin, Guru, Siswa, dan Orang Tua/Wali), kalkulasi rekapitulasi nilai kurikulum otomatis, dan relasi database MySQL yang ternormalisasi rapi.",
+            badgeMetric: "🏫 SPP & SIM Sekolah",
+            description: "Platform portal web sekolah terpadu dan sistem pembayaran SPP online untuk SMK Travina Prima dengan pelacakan tagihan siswa, absensi, e-rapor, dan cetak bukti transaksi digital.",
+            longDescription: "Sistem informasi manajemen sekolah dan tata kelola pembayaran SPP komprehensif yang dirancang untuk SMK Travina Prima. Memfasilitasi pendaftaran calon siswa, profil sekolah kejuruan (TKJ & TKR), monitoring tagihan dan riwayat pelunasan SPP siswa secara transparan, serta sistem administrasi akademik multi-role (Admin Tata Usaha, Guru, Siswa, dan Bendahara Sekolah).",
             image: "assets/images/project_eduportal.jpg",
-            tags: ["PHP", "Laravel", "MySQL", "Tailwind CSS", "PDF Engine"],
-            demoUrl: "https://github.com/rickigilang3-droid",
+            tags: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "SPP Online", "Vercel"],
+            demoUrl: "https://pembayaran-spp-orpin.vercel.app/",
             githubUrl: "https://github.com/rickigilang3-droid",
             featured: true,
             metrics: [
-                { label: "User Roles", value: "4 Level" },
-                { label: "Hemat Waktu Rapor", value: "75%" },
-                { label: "Database", value: "MySQL 3NF" }
+                { label: "Transaksi SPP", value: "Real-Time" },
+                { label: "Multi-Role", value: "4 Akses" },
+                { label: "Platform", value: "Cloud Vercel" }
             ],
             coreFeatures: [
-                "Otentikasi bertingkat aman (Admin, Dewan Guru, Peserta Didik, dan Wali Murid)",
-                "Otomatisasi kalkulasi bobot nilai tugas, UTS, UAS, dan sikap kurikulum",
-                "Export rapor siswa instan ke format dokumen PDF berstandar legal dinas",
-                "Modul presensi harian dengan rekapitulasi persentase kehadiran visual"
+                "Portal profil sekolah modern interaktif SMK Travina Prima (Jurusan TKJ & TKR)",
+                "Sistem monitoring tagihan dan pencatatan pembayaran SPP siswa terintegrasi",
+                "Multi-tier authentication aman untuk Admin Tata Usaha, Guru, dan Siswa/Wali Murid",
+                "Cetak bukti kwitansi transaksi SPP dan rekapitulasi laporan keuangan sekolah"
             ],
-            challengeSolution: "Menjamin integritas data nilai siswa antar tahun ajaran tanpa redudansi. Dipecahkan dengan skema basis data MySQL 3rd Normal Form (3NF) dilengkapi foreign key constraint dan indexing terstruktur."
+            challengeSolution: "Menghubungkan data tagihan bulanan siswa dengan verifikasi pelunasan kas sekolah secara akurat. Diselesaikan dengan pemodelan ledger database transaksi dan sinkronisasi status pembayaran otomatis."
         },
         {
             id: "umkm-commerce-hub",

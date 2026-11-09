@@ -167,6 +167,7 @@ function initTerminal() {
   <div>🔗 Profil: <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-emerald-400 underline">${PORTFOLIO_DATA.profile.github}</a></div>
   <div class="text-slate-400 pt-1">Live Web Apps & Portfolio:</div>
   <div class="pl-2 space-y-1 text-slate-300">
+    <div>• <a href="https://pembayaran-spp-orpin.vercel.app/" target="_blank" class="text-sky-300 hover:underline font-semibold">Portal Sekolah & SPP (Live App @ Vercel)</a> 🏫</div>
     <div>• <a href="https://ar-shoes-puma.vercel.app/" target="_blank" class="text-orange-300 hover:underline font-semibold">AR Shoes Studio (Live App @ Vercel)</a> 👟</div>
     <div>• <a href="https://certiva-amelia.vercel.app/" target="_blank" class="text-indigo-300 hover:underline font-semibold">Certiva (Live App @ Vercel)</a> 🔐</div>
     <div>• <a href="https://rs-amelia-medika.vercel.app/" target="_blank" class="text-teal-300 hover:underline font-semibold">RS Amelia Medika (Live App @ Vercel)</a> 🏥</div>
