@@ -165,9 +165,10 @@ function initTerminal() {
 <div class="space-y-1.5 text-xs font-mono text-slate-200">
   <div class="text-cyan-400 font-bold">🐙 GitHub Profile: @${PORTFOLIO_DATA.profile.githubUsername}</div>
   <div>🔗 Profil: <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-emerald-400 underline">${PORTFOLIO_DATA.profile.github}</a></div>
-  <div class="text-slate-400 pt-1">Repository Publik Terkoneksi:</div>
+  <div class="text-slate-400 pt-1">Live Web Apps & Repository:</div>
   <div class="pl-2 space-y-1 text-slate-300">
-    <div>• <a href="https://github.com/rickigilang3-droid/analisis-saham-bbca" target="_blank" class="text-cyan-300 hover:underline font-semibold">analisis-saham-bbca</a> <span class="text-slate-500">(Python / Technical Charting)</span></div>
+    <div>• <a href="https://analisis-saham-bbca-2o1r.vercel.app/login" target="_blank" class="text-emerald-300 hover:underline font-semibold">analisis-saham-bbca (Live App @ Vercel)</a> 🚀</div>
+    <div>• <a href="https://github.com/rickigilang3-droid/analisis-saham-bbca" target="_blank" class="text-cyan-300 hover:underline font-semibold">analisis-saham-bbca</a> <span class="text-slate-500">(Source Code)</span></div>
     <div>• <a href="https://github.com/rickigilang3-droid/EcoHub-main" target="_blank" class="text-purple-300 hover:underline font-semibold">EcoHub-main</a> <span class="text-slate-500">(Waste Bank Platform)</span></div>
   </div>
 </div>`,

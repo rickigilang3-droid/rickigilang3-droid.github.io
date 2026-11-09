@@ -81,7 +81,7 @@ const PORTFOLIO_DATA = {
             longDescription: "Aplikasi analitik finansial modern yang dirancang khusus untuk memetakan dan menganalisis fluktuasi historis harga saham BBCA. Dibangun dengan memadukan Python untuk data aggregation, Next.js untuk antarmuka super cepat, dan Supabase untuk sinkronisasi watchlist pengguna secara real-time.",
             image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
             tags: ["Python", "Next.js", "Supabase", "Chart.js", "Financial API"],
-            demoUrl: "https://github.com/rickigilang3-droid/analisis-saham-bbca",
+            demoUrl: "https://analisis-saham-bbca-2o1r.vercel.app/login",
             githubUrl: "https://github.com/rickigilang3-droid/analisis-saham-bbca",
             featured: true,
             metrics: [
