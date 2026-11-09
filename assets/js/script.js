@@ -167,6 +167,7 @@ function initTerminal() {
   <div>🔗 Profil: <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-emerald-400 underline">${PORTFOLIO_DATA.profile.github}</a></div>
   <div class="text-slate-400 pt-1">Live Web Apps & Portfolio:</div>
   <div class="pl-2 space-y-1 text-slate-300">
+    <div>• <a href="https://certiva-amelia.vercel.app/" target="_blank" class="text-indigo-300 hover:underline font-semibold">Certiva (Live App @ Vercel)</a> 🔐</div>
     <div>• <a href="https://rs-amelia-medika.vercel.app/" target="_blank" class="text-teal-300 hover:underline font-semibold">RS Amelia Medika (Live App @ Vercel)</a> 🏥</div>
     <div>• <a href="https://analisis-saham-bbca-2o1r.vercel.app/login" target="_blank" class="text-emerald-300 hover:underline font-semibold">analisis-saham-bbca (Live App @ Vercel)</a> 📈</div>
     <div>• <a href="https://github.com/rickigilang3-droid/EcoHub-main" target="_blank" class="text-purple-300 hover:underline font-semibold">EcoHub-main</a> <span class="text-slate-500">(Waste Bank Platform)</span></div>
@@ -194,7 +195,7 @@ function initTerminal() {
 
         projects: () => {
             let output = '<div class="space-y-1.5">';
-            PORTFOLIO_DATA.projects.slice(0, 5).forEach((p, idx) => {
+            PORTFOLIO_DATA.projects.slice(0, 6).forEach((p, idx) => {
                 output += `<div><span class="text-emerald-400 font-mono">${idx + 1}.</span> <span class="text-white font-medium">${p.title}</span> <span class="text-slate-500 text-xs">(${p.tags.slice(0, 3).join(", ")})</span></div>`;
             });
             output += `<div class="text-xs text-slate-400 mt-2">Ketik <span class="text-cyan-400">projects --all</span> atau scroll ke section Projects untuk selengkapnya.</div></div>`;

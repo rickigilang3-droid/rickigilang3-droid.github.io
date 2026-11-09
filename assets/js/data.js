@@ -31,7 +31,7 @@ const PORTFOLIO_DATA = {
     },
 
     stats: [
-        { label: "Proyek Nyata Teruji", value: "5+", icon: "folder-check", desc: "Produksi & Open Source" },
+        { label: "Proyek Nyata Teruji", value: "6+", icon: "folder-check", desc: "Produksi & Open Source" },
         { label: "Database Engine", value: "MySQL & Supabase", icon: "database", desc: "Relasional & Cloud BaaS" },
         { label: "Git Repository", value: "Verified", icon: "git-commit", desc: "GitHub @rickigilang3-droid" },
         { label: "Status Akademik", value: "UBSI TI", icon: "graduation-cap", desc: "Mahasiswa Aktif S1" }
@@ -72,6 +72,31 @@ const PORTFOLIO_DATA = {
     ],
 
     projects: [
+        {
+            id: "certiva-amelia",
+            title: "Certiva - Portal Verifikasi Publik Sertifikat & Ijazah Digital",
+            category: "tools",
+            badgeMetric: "🔐 Kriptografi SHA-256",
+            description: "Platform verifikasi keaslian sertifikat dan ijazah digital publik berbasis kriptografi hash SHA-256, scanner QR Code kamera real-time, dan audit integritas dokumen PDF.",
+            longDescription: "Sistem verifikasi sertifikat dan dokumen akademik digital modern yang dirancang untuk mencegah pemalsuan dokumen penting. Dilengkapi pemindai QR Code kamera langsung di browser, validasi nomor seri sertifikat instan, ekstraksi dokumen PDF otomatis, dan pengecekan hash kriptografis yang menjamin dokumen 100% otentik dan belum dimanipulasi.",
+            image: "assets/images/project_certiva.jpg",
+            tags: ["Vite", "JavaScript", "QR Scanner", "Crypto Hash", "PDF Integrity", "Vercel"],
+            demoUrl: "https://certiva-amelia.vercel.app/",
+            githubUrl: "https://github.com/rickigilang3-droid",
+            featured: true,
+            metrics: [
+                { label: "Validasi Hash", value: "SHA-256" },
+                { label: "Deteksi QR", value: "Real-Time" },
+                { label: "Integritas Dokumen", value: "100% Valid" }
+            ],
+            coreFeatures: [
+                "Verifikasi nomor seri unik sertifikat secara instan melalui basis data publik",
+                "Integrasi kamera pemindai QR Code langsung di browser tanpa instalasi aplikasi tambahan",
+                "Modul bedah dan verifikasi integritas file dokumen digital PDF secara otomatis",
+                "Badge status keabsahan dokumen real-time dengan rincian institusi penerbit dan tanggal terbit resmi"
+            ],
+            challengeSolution: "Memproses pemindaian QR Code dan parsing dokumen PDF secara langsung di sisi client browser tanpa latensi tinggi. Diselesaikan dengan kompresi stream frame video kamera dan web worker background verification."
+        },
         {
             id: "rs-amelia-medika",
             title: "RS Amelia Medika - Sistem Informasi Manajemen Rumah Sakit & Klinik",
